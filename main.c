@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() {
+const char* ExitMessage = "Exiting OS Terminal";
+
+int main() { // This C program opens up a terminal program programmed into the OS and hooks into it
     while (1) {
         char *input = malloc(255);
 
@@ -15,7 +17,7 @@ int main() {
         free(input);
     }
 
-    printf("Goodbye, world!\n");
+    printf("%s\n", ExitMessage);
 
     return 0;
 }
