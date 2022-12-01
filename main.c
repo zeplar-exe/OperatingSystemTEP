@@ -7,7 +7,7 @@ const char* ExitKeyword = "exit";
 
 int main() { // This C program opens up a terminal program programmed into the OS and hooks into it
     while (1) {
-        char *input = malloc(255);
+        char *input = malloc(65536);
 
         scanf("%s", input);
 
