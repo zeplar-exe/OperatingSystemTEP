@@ -3,6 +3,7 @@
 #include <string.h>
 
 const char* ExitMessage = "Exiting OS Terminal";
+const char* ExitKeyword = "exit";
 
 int main() { // This C program opens up a terminal program programmed into the OS and hooks into it
     while (1) {
@@ -10,7 +11,7 @@ int main() { // This C program opens up a terminal program programmed into the O
 
         scanf("%s", input);
 
-        if (strcmp(input, "exit") == 0) {
+        if (strcmp(input, ExitKeyword) == 0) {
             break;
         }
 
