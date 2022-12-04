@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "LinkedList.h"
 
 struct SystemInstance {
     void* memory;
@@ -6,3 +7,6 @@ struct SystemInstance {
     void* disk;
     size_t diskCapacity;
 };
+
+void disposeSystemInstance(struct SystemInstance* systemInstance);
+struct linkedListNode* dumpSystemInstance(struct SystemInstance systemInstance);
